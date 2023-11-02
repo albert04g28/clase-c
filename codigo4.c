@@ -2,20 +2,18 @@
 
 int main() {
 
-int x, y;
+int x;
+  printf("introduce un numero:");
+  scanf("%d",&x);
+  if ((x%2)==0)
+  {
+    printf("Es par!!!!!\n");
 
-  printf("Escribe un entero: ");
-  scanf("%d", &x);
+  }
+else{
+    printf("es impar!!\n");
+ }
 
-  if (x >= 0)
-     y = x;
-  else
-     y = -x;
-
-  printf("\nValor absoluto: %d.\n", y);
- 
-  system("pause");
-  return 0;
 
 
 system("pause");
