@@ -2,10 +2,10 @@
 
 
 int main(){
-int x,sum,i;
+/*int x,sum,i;
 sum = 0;
 printf("introduce un entero");
-scanf("%d",&x);
+scanf("%d",&x);*/
 /*for(i=x+1;i <=x+10;i++)
 {
     sum = sum + i;
@@ -37,8 +37,6 @@ printf("%d",sum);
 */
 do
 {
-
-
 double f,c,p;
 printf("introduce los grados farengei");
 scanf("%lf",&f);
