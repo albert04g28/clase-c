@@ -1,19 +1,26 @@
-#include <stdio.h>
+#include<stdio.h>
 
-int main() {
 
-  int x, y;
+int main(){
+    
+    
+   
+for (int i = 1; i <= 10; i++) {
+        
+       
+printf("%d\n", i);  // Imprime el valor actual de i
+    }
 
-  printf("Escribe un entero: ");
-  scanf("%d", &x);
+    
+   
 
-  if (x >= 0)
-     y = x;
-  else
-     y = -x;
+   
 
-  printf("\nValor absoluto: %d.\n", y);
- 
-  system("pause");
-  return 0;
+
+
+
+
+
+system("pause");
+return 0;
 }
