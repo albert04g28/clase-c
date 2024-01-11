@@ -1,51 +1,39 @@
 #include<stdio.h>
-
+#include<stdlib.h>
+#include<math.h>
 
 int main(){
-    
- /*int i;   
-   
-for ( i = 1; i <= 10; i++) {
-        
-       
-printf("%d\n", i); 
-    }
+unsigned h,m,s;
+printf("introduce una hora en formato h:m:s\n");
+scanf("%u:%u:%u",&h,&m,&s);
+printf("%u:%u:%u\n",h,m,s);
 
-    
-   
-
-   
-
-
-
-
-
-*/
-/*unsigned i;
-i=1;
-while (i<=10)
+s++;
+if (s==60)
 {
-   printf("%u",i);
-   i++;
+   s=0;
+   m++;
+   if (m==60)
+   {
+      m=0;
+      h++;
+   }
+   if (h==24)
+   {
+      h=0;
+   }
+   
+
 }
-*/
-/*
-unsigned i;
-i=1;
-
-do
-{
-   printf("%u",i);
-   i++;
-} while (i<=10);
-*/
+printf("%u:%u:%u",h,m,s);
 
 
-
-
-
-
+ 
 
 system("pause");
 return 0;
 }
+
+
+
+
