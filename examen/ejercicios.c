@@ -146,6 +146,112 @@ return sol;
 
 
 
-/*Diseñe una función C que dada una matriz real NxM , devuelva el número de columna
-de la matriz que tiene la máxima suma de sus elementos*/
+//Diseñe una función C que dada una matriz real NxM , devuelva el número de columna
+//de la matriz que tiene la máxima suma de sus elementos
 
+
+
+/*
+int max(int m[3][3]);
+int main(){
+int m[3][3],i,j;
+for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Ingresa el valor para la posición [%d][%d]: ", i, j);
+            scanf("%d", &m[i][j]);
+        }
+    }
+printf("la columna que tiene mayor suma es la columna:%d\n",max(m));
+system("pause");
+return 0;
+}
+
+int max(int m[3][3]){
+int colum1,colum2,colum3,max;
+    colum1=m[0][0]+m[1][0]+m[2][0];
+    colum2=m[0][1]+m[1][1]+m[2][1];
+    colum3=m[0][2]+m[1][2]+m[2][2];
+
+if (colum1>colum2)
+{
+    if (colum1>colum3)
+    {
+        max=1;
+    }
+    
+}
+else{
+    if (colum2>colum3)
+    {
+        max=2;
+    }
+    else
+    max=3;
+}
+return max;
+}
+*/
+
+
+
+
+
+/*Escribe una función en C que verifique si una matriz cuadrada
+2 dada es simétrica, es decir, si es igual a su transpuesta. */
+
+/*int simetrica(int m[3][3]);
+
+int main() {
+    int N[3][3], i, j, sol = 1;
+
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Ingresa el valor para la posición [%d][%d]: ", i, j);
+            scanf("%d", &N[i][j]);
+        }
+    }
+
+    printf("%d", simetrica(N));
+
+    if (simetrica(N) == 0) {
+        printf("la matriz no es simétrica\n");
+    } else {
+        printf("es simétrica\n");
+    }
+
+    return 0;
+}
+
+int simetrica(int m[3][3]) {
+    int i, j, sol = 1;
+
+    for (i = 0; i < 3; i++) {
+        for (j = 0; j < 3; j++) {
+            if (m[i][j] != m[j][i]) {
+                sol = 0;
+            }
+        }
+    }
+    return sol;
+}*/
+
+
+/*escribir una funcion para saber si una matriz es triangular 
+superior o inferior de enteros con signo devolveran 1 si la m es triangular 
+o 0 si no*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*comprobar si dos archivos de texto son iguales o no*/

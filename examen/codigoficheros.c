@@ -12,7 +12,7 @@ in =fopen("operaciones.txt","r");
 out=fopen("resultados.txt","w");
 while (feof(in) == 0)
 {
-    fscanf(in,"$d %c %d",&a,&op,&b);
+    fscanf(in,"%d %c %d",&a,&op,&b);
     calculadora(a,op,b,&r);
     fprintf(out,"%d %c %d = %d\n",a,op,b,r);
     printf("%d %c %d = %d\n",a,op,b,r);
