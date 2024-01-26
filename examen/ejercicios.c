@@ -485,4 +485,23 @@ int feof(FILE *);*/
 
 
 
+/*Necesitamos diseñar tres funciones para realizar determinadas operaciones con cubos de
+5x5x5 enteros. Las funciones son:
+a) int cuenta(int m[5][5][5], int num). Devuelve como resultado
+el número de veces que aparece el número num en el cubo de enteros m (0.5p).
+b) void cambia(int m[5][5][5], int antinum, int nuevonum).
+Sustituye todas las ocurrencias del número antinum en el cubo de enteros m (si
+los hay) por el nuevo número nuevonum (0.5p).
+c) void busca(int m[5][5][5], int num, unsigned pos[3]).
+Localiza la primera ocurrencia del número num en el cubo m e indica su lugar en
+el vector de posición (pos[0] ← página, pos[1] ← fila, pos[2] ←
+columna). Las páginas, filas y columnas cuentan a partir de cero. Si no se
+encuentra el número, los tres elementos del vector de posición valdrán -1 (1p)*/
+
+
+
+
+
+
+
 
