@@ -483,6 +483,56 @@ int feof(FILE *);*/
 
 
 
+/*
+int feof(FILE *in);
+int main(){
+FILE*in,*out;
+in=fopen("temperatura.txt","r");
+out=fopen("impares.txt","w");
+int t1,t2,t3;
+if (in==NULL)
+{
+    printf("error al abir el archivo");
+}
+while (feof(in)==0)
+{
+    fscanf(in,"%d %d %d",&t1,&t2,&t3);
+    if ((t1%2)!=0)
+    {
+        fprintf(out,"%d",t1);
+    }
+    if ((t3%2)!=0)
+    {
+        fprintf(out,"%d",t3);
+    }
+    if ((t2%2)!=0)
+    {
+        fprintf(out,"%d",t2);
+    }
+}
+if (feof(in)==1)
+{
+    printf("llegamos al final del archivo\n");
+}
+
+fclose(in);
+fclose(out);
+
+system("pause");
+return 0;
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
 
 
 /*Necesitamos diseñar tres funciones para realizar determinadas operaciones con cubos de
@@ -499,9 +549,83 @@ columna). Las páginas, filas y columnas cuentan a partir de cero. Si no se
 encuentra el número, los tres elementos del vector de posición valdrán -1 (1p)*/
 
 
+/*
+int main(){
+int m[4][4][4],num,sol=0;
+printf("introduce el numero que quieres que contemos repetido\n");
+scanf("%d",&num);
+
+
+
+for (int i = 0; i < 5; i++) {
+        for (int j = 0; j < 5; j++) {
+            for (int k = 0; k < 5; k++)
+            {
+                printf("Ingresa el valor para la posición [%d][%d][%d]: ", i, j,k);
+                scanf("%d", &m[i][j][k]);
+            }
+            
+        }
+    }
+
+for (int i = 0; i < 6; i++) {
+        for (int j = 0; j < 6; j++) {
+            for (int k = 0; i < 6; k++)
+            {
+                if (m[i][j][k]==num)
+                {
+                  sol=sol+1;  
+                }
+                
+            }
+            
+        }
+    }
+printf("las veces que el numero se repitio en el cubo son:%d\n",sol);
+
+
+system("pause");
+return 0;
+}
+
+
+*/
+
+
+/*escribir un programa que introduzca por teclado una hora y suelte esa misma hora un segundo despues*/
 
 
 
 
+/*
+int main(){
+unsigned h,m,s;
+printf("introduce una hora con formato h:m:s\n");
+scanf("%u:%u:%u",&h,&m,&s);
+s=s+1;
+if (s>59)
+{
+    m=m+1;
+    s=0;
+    if (m>59)
+    {
+        h=h+1;
+        m=0;
+        if (h>23)
+        {
+            h=0;
+            m=0;
+            s=0;
+        }
+        
+    }
+
+}
+printf("%u:%u:%u",h,m,s);
 
 
+
+    system("pause");
+    return 0;
+}
+*/
