@@ -320,15 +320,169 @@ valor del propio elemento (1p).
 El prototipo de la función se indica a continuación:
 void vecitabla(int tablaent[5][5], int tablasal[4][4]);*/
 
-
-
+/*
+void vecitabla(int m[3][3],int n[3][3]);
 int main(){
+int m[3][3],n[3][3];
+int sol;
+for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("Ingresa el valor para la posición [%d][%d]: ", i, j);
+            scanf("%d", &m[i][j]);
+        }
+    }
+for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d",n[i][j]);
+            
+        }
+    }
+    printf("\n%d\n",n[0][0]);
+system("pause");
+return 0;
+}
 
+
+void vecitabla(int m[3][3],int n[3][3]){
+for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            n[0][0]=m[i][j]-m[0][0];
+            n[0][1]=m[i][j]-m[0][1];
+            n[0][2]=m[i][j]-m[0][2];
+            n[1][0]=m[i][j]-m[1][0];
+            n[1][1]=m[i][j]-m[1][1];
+            n[1][2]=m[i][j]-m[1][2];
+            n[2][0]=m[i][j]-m[2][0];
+            n[2][1]=m[i][j]-m[2][1];
+            n[2][2]=m[i][j]-m[2][2];
+
+        }
+    }
+
+
+
+}
+
+*/
+
+
+/*El siguiente programa escrito en lenguaje C calcule la suma de los n primeros números
+naturales. La cantidad de números a sumar se indica a través del teclado*/
+
+
+
+/*
+int main(){
+int nnumeros,i,sol=0;
+printf("ingrese los n numeros naturales a calcular\n");
+scanf("%d",&nnumeros);
+for ( i = 0; i <= nnumeros; i++)
+{
+    sol+=i;
+}
+
+printf("esta es la sol:%d",sol);
+
+
+system("pause");
+return 0;
+}
+*/
+
+
+
+
+/*Estructurarlo en dos módulos, de forma que se tenga un programa principal, el
+cual solicite por teclado la cantidad de números naturales a sumar y
+posteriormente imprima el resultado obtenido, y una función auxiliar, la cual
+acepte como parámetro de entrada el número que el programa principal solicitó
+por teclado y devuelva a éste el resultado de la suma. El prototipo de la función
+auxiliar es el siguiente (1p):
+unsigned long natusuma(unsigned n);*/
+
+/*
+unsigned long natusuma(unsigned n);
+int main(){
+int i;
+unsigned n;
+printf("ingrese los n numeros naturales a calcular\n");
+scanf("%u",&n);
+
+printf("esta es la sol:%lu\n",natusuma(n));
 
 
 
 system("pause");
 return 0;
 }
+unsigned long natusuma(unsigned n){
+
+unsigned long sol=0,i;
+    for ( i = 0; i<= n; i++)
+    {
+        sol+=i;
+    }
+    return sol;
+}
+*/
+
+
+/*En una progresión geométrica, cada término se obtiene multiplicando el anterior por una
+constante denominada razón. De este modo, los primeros términos de una progresión
+geométrica cuyo primer término es 5 y la razón es 1.5 son los siguientes: 5, 7.5, 11.25,
+16.875, 25.3125, 37.96875, ...
+Escribir una función que acepte como parámetros el primer término de una progresión
+geométrica, la razón de la misma y el número de términos a sumar (1p).
+double geosuma(double t, double r, unsigned n);*/
+/*
+double geosuma(double t, double r, unsigned n);
+int main(){
+unsigned n;
+double t,r;
+printf("ingrese la razon de la sucesion\n",n);
+scanf("%u",&n);
+
+printf("introduce el primer termino de la sucecion\n");
+scanf("%lf",&t);
+
+printf("introduce el numero de terminos a calcular\n");
+scanf("%lf",&r);
+
+printf("la sucesion es: %lf",geosuma(t,r,n));
+
+
+
+    system("pause");
+    return 0;
+}
+double geosuma(double t, double r, unsigned n){
+double sol=0;
+for ( int i = 0; i <= r; i++)
+{
+    
+    sol+=t*n;
+    t=t+1*n;
+}
+return sol;
+
+}
+*/
+
+
+
+
+
+/*Desarrollar un programa que a partir de un fichero de enteros con signo denominado
+“temperaturas.txt” genere otro llamado “impares.txt” que sólo incluya los números
+impares existentes en el fichero de entrada. Los enteros están separados entre ellos por un
+espacio en blanco (2p).
+Nota: La función cuyo prototipo se indica a continuación permite saber si se ha llegado al
+final de un fichero con sólo abrirlo. Entonces la función devuelve uno y en caso contrario
+cero. Dicho prototipo se encuentra en el fichero de encabezamiento "stdio.h".
+int feof(FILE *);*/
+
+
+
+
 
 
