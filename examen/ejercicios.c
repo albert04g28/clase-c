@@ -241,17 +241,94 @@ superior o inferior de enteros con signo devolveran 1 si la m es triangular
 o 0 si no*/
 
 
+/*
+int triangular(int m[3][3]);
+int main(){
+int i,j,m[3][3],sol;
+for ( i = 0; i < 3; i++) {
+        for ( j = 0; j < 3; j++) {
+            printf("Ingresa el valor para la posición [%d][%d]: ", i, j);
+            scanf("%d", &m[i][j]);
+        }
+    }
+;
+printf("si es cero no es triangular si\n es uno si. El resultado es:%d\n",triangular(m));
+
+system("pause");
+return 0;
+}
+
+int triangular(int m[3][3]){
+int l,u,sol;
+l=m[0][1]+m[0][2]+m[1][2];
+u=m[1][0]+m[2][0]+m[2][1];
+if (l==0)
+{
+    sol=1;
+}
+else 
+sol=0;
+if (u==0)
+{
+    sol =1;
+}
+else{
+    sol= 0;
+}
+return sol;
+}
+*/
 
 
 
 
+/*escribir un programa que procese un fichero texto.txt y muestre por pantalla el numero de caracteres palabras y lineas del mismo*/
+/*
+int main() {
+    FILE *in, *out;
+    int l;
+
+    in = fopen("texto.txt", "r");
+    out = fopen("info.txt", "w");
+
+    if (in == NULL || out == NULL) {
+        printf("Error al abrir los archivos\n");
+        return 1;
+    }
+
+    while (fscanf(in, "%d", &l) == 1) {
+        fprintf(out, "%d", l);
+    }
+
+    fclose(in);
+    fclose(out);
+
+    system("pause");
+    return 0;
+}
+*/
+
+
+/*Desarrollar una función que acepte como primer parámetro una tabla de 4x4 enteros, y
+devuelva como segundo parámetro una nueva tabla en la cual cada elemento de la
+misma sea igual a la suma de todos los elementos de la tabla original sin incluir el
+valor del propio elemento (1p).
+1 1 1 1    39 39 39 39
+2 2 2 2    38 38 38 38
+3 3 3 3    37 37 37 37
+4 4 4 4    36 36 36 36
+El prototipo de la función se indica a continuación:
+void vecitabla(int tablaent[5][5], int tablasal[4][4]);*/
+
+
+
+int main(){
 
 
 
 
+system("pause");
+return 0;
+}
 
 
-
-
-
-/*comprobar si dos archivos de texto son iguales o no*/
