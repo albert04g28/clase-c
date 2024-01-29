@@ -240,8 +240,8 @@ int simetrica(int m[3][3]) {
 superior o inferior de enteros con signo devolveran 1 si la m es triangular 
 o 0 si no*/
 
-
 /*
+
 int triangular(int m[3][3]);
 int main(){
 int i,j,m[3][3],sol;
@@ -627,5 +627,109 @@ printf("%u:%u:%u",h,m,s);
 
     system("pause");
     return 0;
+}
+*/
+
+
+
+/*El vector de entradas X se multiplica (producto escalar) por el de pesos W. Si el resultado supera el umbral § la neurona se activa. Desarrollar una función que devuelva uno (1) si una neurona se activa y cero (0) en caso contrario. Asimismo, codificar una función principal, la cual solicite por teclado valores para el vector de entradas, el de pesos y el umbral, invoque a la función anterior y presente en pantalla el resultado devuelto por ésta. A continuación, se sugiere el siguiente prototipo para la función auxiliar:
+
+int Neurona_activa(int X[5], int W[5], int umbral);*/
+/*
+int Neurona_activa(int x[5], int w[5], int umbral);
+int main(){
+int x[5],w[5],umbral;
+
+    for (int i = 0; i < 6; i++)
+    {
+        printf("introduce el valor de la entrada [%d]\n",i);
+        scanf("%d",&x[i]);
+    }
+    
+for (int i = 0; i < 6; i++)
+{
+    printf("introduce el valor del pesos en [%d]\n",i);
+    scanf("%d",&w[i]);
+}
+printf("introduce el umbral\n");
+scanf("%d",&umbral);
+
+if ( Neurona_activa( x,  w, umbral)==1)
+{
+    printf("la neurona se activa\n");
+}
+else printf("no se activa\n");
+    system("pause");
+    return 0;
+
+}
+
+
+int Neurona_activa(int x[5], int w[5], int umbral){
+int producto,i,sol;
+for ( i = 0; i < 6; i++)
+{
+    producto+=x[i]+w[i];
+}
+if (producto>umbral)
+{
+    sol=1;
+}
+else{
+sol=0;}
+return sol;
+
+
+}
+*/
+
+
+
+
+/*ejercicio del roberto enunciado en whasa*/
+
+
+
+
+
+/*
+double maxivector(double v[10]);
+int main(){
+double v[10];
+for (int i = 0; i < 11; i++)
+{
+    printf("introduce el valor [%d] del vector\n",i);
+    scanf("%lf",&v[i]);
+}
+printf("este es al valor maximo del vector:%lf\n",maxivector(v));
+
+for (int i = 0; i < 11; i++)
+{
+    printf("este es el nuevo vector:%lf\n",v[i]);
+}
+
+
+    system("pause");
+    return 0;
+}
+
+
+double maxivector(double v[10]){
+double umbral=0;
+for (int i = 0; i < 11; i++)
+{
+    if (v[i]>umbral)
+    {
+        umbral=v[i];
+    }
+    
+}
+
+for (int i = 0; i < 11; i++)
+{
+    v[i]=v[i]/umbral;
+}
+
+return umbral;
 }
 */
